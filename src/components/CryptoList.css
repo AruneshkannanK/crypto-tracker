@@ -1,0 +1,104 @@
+.crypto-list {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.crypto-list h2 {
+  padding: 1.5rem;
+  margin: 0;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.list-header {
+  display: flex;
+  background-color: #f8f9fa;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 1.5rem;
+}
+
+.list-body {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.list-row {
+  display: flex;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.list-row:hover {
+  background-color: #f8f9fa;
+}
+
+.list-row.selected {
+  background-color: #e3f2fd;
+}
+
+.list-cell {
+  display: flex;
+  align-items: center;
+}
+
+.rank {
+  width: 10%;
+  font-weight: 500;
+}
+
+.name {
+  width: 45%;
+}
+
+.price {
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.change {
+  width: 20%;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+
+.change.positive {
+  color: #4caf50;
+}
+
+.change.negative {
+  color: #f44336;
+}
+
+.crypto-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.crypto-name-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.crypto-name {
+  font-weight: 500;
+}
+
+.crypto-symbol {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.no-results {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+} 
